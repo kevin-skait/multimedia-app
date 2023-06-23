@@ -1,0 +1,15 @@
+The search and select features in the Multimedia Web App enhance the user's ability to efficiently manage and view files. 
+
+The search feature allows users to enter a search query in the search input field, and the app dynamically filters the file list based on the query. The search is case-insensitive, and it matches the query against the lowercase file names. This feature enables users to quickly find specific files by typing keywords or partial names.
+
+The select feature enables users to select and interact with individual files. When a file is clicked in the file list, it becomes selected, indicated by a change in background color. The selected file's details are displayed in the file viewer section, which dynamically renders the appropriate component based on the file type. Users can perform actions like renaming, downloading, and deleting the selected file using the control tools provided.
+
+I chose these features because they enhance the usability and functionality of the Multimedia Web App. The search feature allows users to easily locate files in large collections, saving time and effort. The select feature provides a clear and intuitive way for users to interact with files, enabling them to perform actions specific to individual files.
+
+The code works by utilizing React's state management and event handling capabilities. The `useState` hook is used to maintain the state variables for file data, selected file, search query, and other aspects of the app. The `useEffect` hook is used to set the initial file data when the component mounts.
+
+The search functionality is implemented by filtering the file list based on the search query using the `filter` array method and the `includes` string method. The selected file is managed by updating the state variable when a file is clicked or when certain actions are performed on the selected file.
+
+The code also includes CSS styles to ensure a visually appealing and user-friendly interface. Additionally, the code utilizes external libraries such as ChartJS to generate the charts for file type breakdown.
+
+Overall, the code combines React's declarative approach, hooks, and event handling to create an interactive and efficient Multimedia Web App with search and select features that enhance file management and viewing capabilities.
